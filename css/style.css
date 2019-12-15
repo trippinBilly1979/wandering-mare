@@ -54,6 +54,13 @@ hr {
   font-size: 30px;
   line-height: 20px;
 }
+
+  .navbar-brand>img {
+	max-height: 100%;
+	height: 100%;
+	width: auto;
+	margin: 0 auto;
+  }
 a.navbar-brand span {
 	color:#24325D;
 	font-size:35px;

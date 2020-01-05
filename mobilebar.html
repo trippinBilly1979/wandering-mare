@@ -5,7 +5,64 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Me & Family Bootstrap Template</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .columns {
+      float: left;
+      width: 33.3%;
+      padding: 8px;
+    }
+    
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+    
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+    
+    .price .header {
+      background-color: #111;
+      color: white;
+      font-size: 25px;
+    }
+    
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .price .grey {
+      background-color: #eee;
+      font-size: 20px;
+    }
+    
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .columns {
+        width: 100%;
+      }
+    }
+    </style>
+  <title>Pricing</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +91,8 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-        <a class="navbar-brand" href="index.html"><span>Me & Family</span></a>
+      <a class="navbar-brand img-responsive" href="index.html"><img src="img/wmlogo3.png" /></a>
+        
       </div>
       <div class="navbar-collapse collapse">
         <div class="menu">
@@ -48,156 +106,43 @@
       </div>
     </div>
   </nav>
-
-  <div class="breadcrumb">
-    <h2>Gallery</h2>
+  <div class="img-responsive">
+    <img src='img/wmlogo3.png'/>
   </div>
 
   <section id="section-works" class="section appear clearfix">
-    <div class="container">
-      <div class="row">
-        <nav id="filter" class="col-md-12 text-center">
-          <ul>
-            <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-            <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Events</a></li>
-            <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-            <li><a href="#" class="btn-theme btn-small" data-filter=".print">Family</a></li>
-          </ul>
-        </nav>
-        <div class="col-md-12">
-          <div class="row">
-            <div class="portfolio-items isotopeWrapper clearfix" id="3">
-              <article class="col-md-4 isotopeItem webdesign">
-                <div class="portfolio-item">
-                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
-                    <img src="img/portfolio/1.jpg" alt="welcome" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 1</a></h5>
-                      <a href="img/portfolio/1.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem photography">
-                <div class="portfolio-item">
-                  <div class="wow bounceIn">
-                    <img src="img/portfolio/2.jpg" alt="" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 2</a></h5>
-                      <a href="img/portfolio/2.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-
-              <article class="col-md-4 isotopeItem photography">
-                <div class="portfolio-item">
-                  <div class="wow rotateInDownRight">
-                    <img src="img/portfolio/3.jpg" alt="" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 3</a></h5>
-                      <a href="img/portfolio/3.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem print">
-                <div class="portfolio-item">
-                  <div class="wow rotateInUpLeft">
-                    <img src="img/portfolio/4.jpg" alt="" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 4</a></h5>
-                      <a href="img/portfolio/4.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem photography">
-                <div class="portfolio-item">
-                  <div class="wow bounceIn">
-                    <img src="img/portfolio/5.jpg" alt="" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 5</a></h5>
-                      <a href="img/portfolio/5.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem webdesign">
-                <div class="portfolio-item">
-                  <div class="wow rotateInDownRight">
-                    <img src="img/portfolio/6.jpg" alt="" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 6</a></h5>
-                      <a href="img/portfolio/6.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem print">
-                <div class="portfolio-item">
-                  <div class="wow rotateInUpLeft">
-                    <img src="img/portfolio/7.jpg" alt="" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 7</a></h5>
-                      <a href="img/portfolio/7.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem photography">
-                <div class="portfolio-item">
-                  <div class="wow bounceIn">
-                    <img src="img/portfolio/8.jpg" alt="" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 8</a></h5>
-                      <a href="img/portfolio/8.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="col-md-4 isotopeItem print">
-                <div class="portfolio-item">
-                  <div class="wow rotateInDownRight">
-                    <img src="img/portfolio/9.jpg" alt="" />
-                  </div>
-                  <div class="portfolio-desc align-center">
-                    <div class="folio-info">
-                      <h5><a href="#">Project name 9</a></h5>
-                      <a href="img/portfolio/9.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
+    <h2 style="text-align:center">Pricing and Services</h2>
+    <p style="text-align:center">Resize the browser window to see the effect.</p>
+    
+    <div class="columns">
+      <ul class="price">
+        <li class="header">Basic Alcohol Rental</li>
+        <li >Trailer with Bartender (8hrs) - $850</li>
+        <li>Each Additional Hour- $150</li>
+        <li>1 BAC certified Bartender for up to 50 guests*</li>
+        <li>Up to 25 miles outside of Eureka IL**</li>
+        <li>Includes Napikins, Cups, Icd, Alcohol and soda ordering guide, and Bartender tool kit</li>
+      </ul>
     </div>
+    
+    <div class="columns">
+      <ul class="price">
+        <li class="header" style="background-color:#4CAF50">Dry Hire Rental</li>
+        <li>Trailer Rental (4hrs) - $300</li>
+        <li>Each Additional Hour- $100</li>
+        <li>1 Staff member to help service your event for up to 75 guests</li>
+        <li>Extra staff for every additional 75 guests required (Extra staff member - $20/hr.)</li>
+      </ul>
+    </div>
+    
+    <div class="columns">
+      <ul class="price">
+        <li class="header">Photo Sessions</li>
+        <li class="grey">$40 / hour plus travel</li>
+        <li>Travel at $0.75 / mile</li>\
+      </ul>
+    </div>
+    
   </section>
 
   <footer>
@@ -205,26 +150,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 f-about">
-            <a href="index.html"><h1>Me & Family</h1></a>
-            <p>We possess within us two minds. So far I have written only of the conscious mind. I would now like to introduce you to your second mind, the hidden and mysterious subconscious. Our subconscious mind contains such power.</p>
+            <a href="index.html">
+              <h1>Contact Us:</h1>
+            </a>
+            <p>Please reach out for additional information. We would love to answer any questions you may have about
+              our
+              business and hear about your upcoming event</p>
 
           </div>
-          <div class="col-md-4 l-posts">
-            <h3 class="widgetheading">Latest Posts</h3>
-            <ul>
-              <li><a href="#">This is awesome post title</a></li>
-              <li><a href="#">Awesome features are awesome</a></li>
-              <li><a href="#">Create your own awesome website</a></li>
-              <li><a href="#">Wow, this is fourth post title</a></li>
-            </ul>
-          </div>
+
           <div class="col-md-4 f-contact">
             <h3 class="widgetheading">Stay in touch</h3>
             <a href="#">
-              <p><i class="fa fa-envelope"></i> example@gmail.com</p>
+              <p><i class="fa fa-envelope"></i>thewanderingmare@gmail.com</p>
             </a>
-            <p><i class="fa fa-phone"></i> +345 578 59 45 416</p>
-            <p><i class="fa fa-home"></i> Me & Family inc | PO Box 23456 Little Lonsdale St, New York <br> Victoria 8011 USA</p>
+            <p><i class="fa fa-phone"></i> (309)231-2766</p>
           </div>
         </div>
       </div>
@@ -248,11 +188,9 @@
 
 
           <ul class="social-network">
-            <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
-            <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
-            <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
-            <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
-            <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li>
+            <li><a href="https://www.facebook.com/wanderingmare" data-placement="top" title="Facebook"><i
+                  class="fa fa-facebook fa-1x"></i></a></li>
+            <li><a href="#" data-placement="top" title="Instagram"><i class="fa fa-instagram fa-1x"></i></a></li>
           </ul>
         </div>
       </div>
